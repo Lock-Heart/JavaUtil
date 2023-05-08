@@ -1,11 +1,11 @@
-´Ë¹¤¾ßÀà°üº¬¹¤¾ß£º
-1¡¢ÎÄ¼ş±àÂë¸ñÊ½×ª»»¹¤¾ß
+æ­¤å·¥å…·ç±»åŒ…å«å·¥å…·ï¼š
+1ã€æ–‡ä»¶ç¼–ç æ ¼å¼è½¬æ¢å·¥å…·
 
-2¡¢²éÕÒÎÄ¼ş¼ĞÏÂËùÓĞÎÄ¼ş£¬²¢Êä³öÎÄ¼ş¾ø¶ÔÂ·¾¶¹¤¾ß
+2ã€æŸ¥æ‰¾æ–‡ä»¶å¤¹ä¸‹æ‰€æœ‰æ–‡ä»¶ï¼Œå¹¶è¾“å‡ºæ–‡ä»¶ç»å¯¹è·¯å¾„å·¥å…·
 
 
 
-·´±àÒëÓï¾ä£º
+åç¼–è¯‘è¯­å¥ï¼š
 
 java -cp "D:\Program\IntelliJ IDEA 2022.2.3\plugins\java-decompiler\lib\java-decompiler.jar" org.jetbrains.java.decompiler.main.decompiler.ConsoleDecompiler -dgs=true mps-core.jar dp
 
