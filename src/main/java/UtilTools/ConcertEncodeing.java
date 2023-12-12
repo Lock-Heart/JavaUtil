@@ -1,3 +1,5 @@
+package UtilTools;
+
 import java.io.File;
 import java.io.FileFilter;
 import java.nio.charset.Charset;
@@ -10,7 +12,7 @@ public class ConcertEncodeing {
 
     public static void main(String[] args) {
 
-        convertCharset("D:\\CodeWorkSpase\\Idea\\JavaUtil\\src\\test",Charset.forName("GBK"),Charset.forName("UTF-8"),"java");
+        convertCharset("D:\\Company\\mps-core\\src\\main\\java\\com\\hylandtec",Charset.forName("UTF-8"),Charset.forName("GBK"),"java");
 
     }
 

@@ -1,0 +1,52 @@
+https://agit.ai/blue/youlingkaishi/raw/branch/master/moo0/18.zip
+
+cd /home/cps/cup6/test/logs/mps-server
+
+tail -f mps-server.log
+
+ 达梦数据库-温州
+172.16.97.189  5236
+cps4wzcb/cps4wzcb123
+
+http://172.16.98.96:8080/cls_wz/main/Logon.jsp 
+老系统访问地址
+用户：00747/89987
+密码：8个1
+
+(^[^\r\n]+[\S]+[^\r\n]+)(//.+$)
+
+\t\t//$2\r\n$1
+
+\t/**$2*/\r\n$1
+
+
+http://guhaohua@172.16.97.185:8080/r/cps4-bjcn/code.git 
+
+CIPS常用报文 ： 111   112  301 - 309  350  353
+
+
+01-汇款； 02-单证；03-资金；04-贵金属；05-理财，06-退汇业务，07-收款通知；08-钞汇调拨；21-利息；22-费用；99-其他
+
+CPS_CLR_MAIN_BIZ_TYPE
+
+INSERT INTO CPS4WZCB.CUP_BAS_ENUM (ENUM_KIND1,ENUM_KIND2,ENUM_VALUE,ENUM_LABEL,ENUM_ORDER,ENUM_DESC,SYS_DEF_FLAG,DATA_ENABLE) VALUES ('CPS_CLR_MAIN_BIZ_TYPE',' ','01','汇款','01','清算业务类型','0','Y');
+
+
+发报行 报文标识号
+
+2023年11月15日16点02分
+cps_clr_biz_main io_type=1(biz_status=业务结束且accstatus=3 || biz_status=2且accstatus=2),收款，iotype=0 付款bt.acct_flg = '15' 
+cps_acc_main clr_acc_date biz_id=id own_branch
+
+cps_clr_biz_main io_type=1(biz_status=业务结束且accstatus=3 || biz_status=2且accstatus=2),收款，iotype=0 付款bt.acct_flg = '15' 
+
+cps_acc_main clr_acc_date biz_id=id own_branch
+
+
+
+2023年11月21日10点44分
+
+UPDATE CPS4WZCB.MPS_PAR_FEB_CFG t
+SET t.MSG_TYPES = 'cips.111.001.03,cips.112.001.03,cips.301.001.03,cips.302.001.03,cprd.360.001.01,cips.805.001.01'
+WHERE t.ID LIKE 'CIP0000000000003' ESCAPE '#';
+

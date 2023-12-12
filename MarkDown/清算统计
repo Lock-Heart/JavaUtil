@@ -1,0 +1,101 @@
+机构业务量统计：
+
+cls_cia_transfer	CPS_CLR_BIZ_MAIN  清算主表
+
+cls_com_accdata		CPS_ACC_MAIN	财务主表
+
+cls_coa_transfer
+
+输入：
+起始日期
+终止日期
+币种
+分行号
+机构号
+
+
+输出：
+起始记账日期，
+终止记账日期，
+币种，
+金额，
+人民币金额，
+折美金额，
+机构号，
+来账金额，
+笔数，
+往账金额，
+笔数，
+
+
+代理行手续费 CPS_CLR_BIZ_MAIN IO_TYPE=1
+
+cls_cia_transfer
+
+CLS_COM_BIZ_BANK
+
+cls_cia_trans_sub
+
+
+输入：
+起始日期，
+截止日期，
+
+输出：
+账户行，DR_BANK_CODE
+币种，
+汇款行国家(52A)，DR_INST_BANK
+扣费承担方式，CHARGE_TYPE
+金额，
+
+
+账户行协议及手续费：
+CLS_COA_TRANSFER
+
+CLS_CIA_TRANSFER
+
+CLS_CAM_STMT
+
+MDW_MSG_IN
+
+CLS_COA_TRANSFER
+
+CLS_PAR_NOSTRO
+
+输入：
+起始日期、
+结束日期、
+币种
+
+输出：
+账户行、
+币种、
+账户维护费、
+纸质账单费、
+SWIFT账单费、
+借记费、
+借记笔数、CPS_CLR_BIZ_MAIN IO_TYPE=0
+贷记费、
+贷记笔数、CPS_CLR_BIZ_MAIN IO_TYPE=1
+950//900费、
+MT950+900笔数、 CPS_CAM_NOS  MPS_MDW_MSG_IN 900
+全额到账手续费、
+全额到账汇款笔数、 CPS_CLR_BIZ_MAIN IO_TYPE=0 费用类型OUR
+总费用。
+
+
+GPI手续费统计
+CPS_GPI_TRACKER 历程表
+
+输入：
+账户行
+
+输出：
+
+汇款方式、	GPI：GPI_CHARGE_TYPE
+账户行、		GPI状态发起行
+收款行、		GPI转汇行
+币种、		GPI汇款币种
+汇款金额、	GPI汇款金额
+手续费币种、
+手续费金额
